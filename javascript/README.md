@@ -3,6 +3,7 @@
 ## Language: `JavaScript`
 
 |topics       |                                          link|
+|-------------|----------------------------------------------|
 |array-reverse|[Click here](./CodeChallenge/array-reverse.md)|
 
 ### Folder and Challenge Setup

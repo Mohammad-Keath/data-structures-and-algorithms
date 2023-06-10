@@ -6,6 +6,7 @@
 |-------------|----------------------------------------------|
 |array-reverse|[Click here](./CodeChallenge/array-reverse.md)|
 |array-insert-shift|[Click here](./CodeChallenge/array-insert-shift.md)|
+|Singly Linked Lists|[Click here](./CodeChallenge/Singly%20Linked%20Lists.md)|
 
 ### Folder and Challenge Setup
 

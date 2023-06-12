@@ -8,6 +8,7 @@
 |array-insert-shift|[Click here](./CodeChallenge/array-insert-shift.md)|
 |Singly Linked Lists|[Click here](./CodeChallenge/Singly%20Linked%20Lists.md)|
 |Doubly Linked list|[Click here](./CodeChallenge/doubly%20Linked%20list.md)|
+|array-binary-search|[Click here](./CodeChallenge/array-binary-search.md)|
 
 ### Folder and Challenge Setup
 

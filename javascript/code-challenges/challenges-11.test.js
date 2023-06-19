@@ -1,5 +1,7 @@
 'use strict';
 
+const { val } = require("cheerio/lib/api/attributes");
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -19,7 +21,13 @@ Becomes:
 ------------------------------------------------------------------------------------------------ */
 
 function transformToLis(obj){
-  // Solution code here...
+  const newArr = []
+  let values = Object.entries(obj)
+  for (let i=0;i<values.length;i++){
+    let componant =`<li>${values[i][0]}: ${values[i][1]}</li>`
+    newArr.push(componant)
+    }
+    return newArr
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,7 +41,15 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  // Solution code here...
+  let count = 0
+   input.map(value=>{
+    value.map(value=>{
+      if (value == target){
+        count++
+      }
+    })
+  })
+  return count
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,7 +63,12 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  return input.reduce((summation,value)=>{
+    value.map(value=>{
+      summation+= value
+    })
+    return summation
+  },0)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +84,11 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  return input.map(subArr => {
+    const filtered = subArr.filter(num => typeof num === 'number' && num % 5 === 0);
+    const powered = filtered.map(num => Math.pow(2, num));
+    return powered;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -129,7 +154,13 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let filtered = data.filter(value => (value.gender == 'female')||(value.gender == 'male'))
+  let result =[]
+  filtered.map(value=>{
+    result.push(value.name)
+  })
+  let finalRes=result.join(' and ')
+  return finalRes
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -139,7 +170,17 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  let heights =[]
+  data.map(value=>{
+    heights.push(parseInt(value.height))
+  })
+  let index = 0
+  for (let i=0;i<heights.length;i++){
+     if(heights[i]<heights[index]){
+      index = i
+     }
+  }
+  return data[index].name
 };
 
 /* ------------------------------------------------------------------------------------------------

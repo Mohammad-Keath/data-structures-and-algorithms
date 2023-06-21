@@ -10,8 +10,9 @@
 |Doubly Linked list|[Click here](./CodeChallenge/doubly%20Linked%20list.md)|
 |array-binary-search|[Click here](./CodeChallenge/array-binary-search.md)|
 |linked-list-insertion|[Click here](./CodeChallenge/linked-list-insertion.md)|
+|linked-list-kth|[Click here](./CodeChallenge/linked-list-kth.md)|
 
-
+linked-list-kth
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.

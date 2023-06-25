@@ -11,7 +11,14 @@ Write a function named screenForNames that takes in an array of strings and uses
 ------------------------------------------------------------------------------------------------ */
 
 const screenForNames = (arr) => {
-  // Solution code here...
+ let regex =/^(Mr\.|Mrs\.|Ms\.|Dr\.).[A-Za-z]+$/
+ let newArr =[]
+ arr.map(value=>{
+  if(value.match(regex)){
+   newArr.push(value)
+  }
+ })
+ return newArr
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -23,7 +30,11 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 ------------------------------------------------------------------------------------------------ */
 
 const toTitleCase = (arr) => {
-  // Solution code here...
+  let newArr =[]
+   arr.map(value=>{
+    newArr.push(value.charAt(0).toUpperCase()+value.slice(1,value.length))
+  })
+  return newArr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -98,7 +109,20 @@ let starWarsData = [{
 }];
 
 let biggerThanLuke = (arr) => {
-  // Solution code here...
+  let lukesmass = 0
+  for (let i=0;i<arr.length;i++){
+    if(arr[i].name.includes('uke')){
+      lukesmass = parseInt(arr[i].mass)
+    }
+  }
+
+let newArr =[]
+for (let i=0;i<arr.length;i++){
+  if(parseInt(arr[i].mass)>lukesmass){
+    newArr.push(arr[i].name)
+  }
+}
+return newArr.join(' - ')
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -116,7 +140,9 @@ This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
 const sortBy = (property, arr) => {
-  // Solution code here...
+  return arr.sort( (a,b)=>{
+    if(a[property]<b[property]) {return -1} })
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -132,7 +158,8 @@ https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
-  // Solution code here...
+  let regex = /^https:\/\/[^\/]+\.[^\/]+/
+  return regex.test(url)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -155,7 +182,14 @@ Here is a sample board:
 ------------------------------------------------------------------------------------------------ */
 
 const detectTicTacToeWin = (board) => {
-  // Solution code here...
+  if(board[0][0]==board[0][1]==board[0][2]){return true}
+  else if(board[1][0]==board[1][1]==board[1][2]){return true}
+  else if(board[2][0]==board[2][1]==board[2][2]){return true}
+  else if(board[0][0]==board[1][0]==board[2][0]){return true}
+  else if(board[0][1]==board[1][1]==board[2][1]){return true}
+  else if(board[0][2]==board[1][2]==board[2][2]){return true}
+else return false
+  
 };
 
 /* ------------------------------------------------------------------------------------------------

@@ -1,4 +1,6 @@
 # Stack-and-Queues
+[codes](./)
+
 - Stack 
 ![stack](./assets/Stack.png)
 - Queues

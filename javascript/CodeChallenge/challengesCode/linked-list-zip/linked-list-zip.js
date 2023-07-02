@@ -41,7 +41,37 @@ class linkedlist {
             newlist.Append(currentB.value)}
         }
         return newlist
-    }
+
+    //     let newlist = new linkedlist()
+    //     let currentA = listA.head
+    //     let postcurrentA = listA.head.next
+    //     let currentB = listB.head
+    //     let postcurrentB = listB.head.next
+    //     let current
+    //     while(currentA.next||currentB.next){
+    //             if(currentA.next){
+    //             currentA.next = null
+    //             if(newlist.head){
+    //                 current.next = currentA
+    //                 current = current.next
+    //                 currentA = postcurrentA
+    //                 postcurrentA = postcurrentA.next
+    //             }else {
+    //                 newlist.head = currentA
+    //                 current = newlist.head
+    //             }
+                
+    //             if(currentB.next){
+    //                 currentB.next = null
+    //                 current.next = currentB
+    //                 currentB = postcurrentB
+    //                 postcurrentB = postcurrentB.next
+    //                 current=current.next
+    //             }
+    //     }
+    // }
+    // return newlist
+}
 
 module.exports={linkedlist:linkedlist,
 zip:zipLists}

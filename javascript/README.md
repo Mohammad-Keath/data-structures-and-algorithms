@@ -2,6 +2,20 @@
 
 ## Language: `JavaScript`
 
+|topics       |                                          link|
+|-------------|----------------------------------------------|
+|array-reverse|[Click here](./CodeChallenge/array-reverse.md)|
+|array-insert-shift|[Click here](./CodeChallenge/array-insert-shift.md)|
+|Singly Linked Lists|[Click here](./CodeChallenge/Singly%20Linked%20Lists.md)|
+|Doubly Linked list|[Click here](./CodeChallenge/doubly%20Linked%20list.md)|
+|array-binary-search|[Click here](./CodeChallenge/array-binary-search.md)|
+|linked-list-insertion|[Click here](./CodeChallenge/linked-list-insertion.md)|
+|linked-list-kth|[Click here](./CodeChallenge/linked-list-kth.md)|
+|linked-list-zip|[Click here](./CodeChallenge/linked-list-zip.md)|
+|stack-and-queue|[Click here](./CodeChallenge/challengesCode/stack-and-queue/stack-and-queue.md)|
+
+
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.

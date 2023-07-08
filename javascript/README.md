@@ -12,7 +12,12 @@
 |linked-list-insertion|[Click here](./CodeChallenge/linked-list-insertion.md)|
 |linked-list-kth|[Click here](./CodeChallenge/linked-list-kth.md)|
 |linked-list-zip|[Click here](./CodeChallenge/linked-list-zip.md)|
+
+|stack-queue-pseudo|[Click here](./CodeChallenge/challengesCode/stack-and-queue)|
+|stack-and-queue|[Click here](./CodeChallenge/challengesCode/stack-and-queue/stack-and-queue.md)|
+|stack-queue-animal-shelter|[Click here](./CodeChallenge/challengesCode/stack-queue-animal-shelter/stack-queue-animal-shelter.md)|
 |stack-and-queue|[Click here](./CodeChallenge/challengesCode/stack-and-queue)|
+
 
 
 

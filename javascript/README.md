@@ -16,6 +16,7 @@
 |stack-and-queue|[Click here](./CodeChallenge/challengesCode/stack-and-queue/stack-and-queue.md)|
 |stack-queue-animal-shelter|[Click here](./CodeChallenge/challengesCode/stack-queue-animal-shelter/stack-queue-animal-shelter.md)|
 |stack-queue-brackets|[Click here](./CodeChallenge/challengesCode/stack-queue-brackets/stack-queue-brackets.md)|
+|trees|[Click here](./CodeChallenge/challengesCode/Trees/tree.md)|
 
 
 

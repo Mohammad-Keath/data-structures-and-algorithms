@@ -40,6 +40,23 @@ class BinaryTree {
             traverse(this.root)
             return arr
         }
+        
+    }
+    maxNum(){
+        let highest = this.root.value;
+        function gothrough (node){
+        if(node.left){
+            gothrough(node.left)
+        }
+        if (node.value>highest){
+        highest = node.value
+        }
+        if(node.right){
+        gothrough(node.right)
+        }
+        } 
+        gothrough(this.root)
+        return highest
     }
 }
 module.exports = BinaryTree

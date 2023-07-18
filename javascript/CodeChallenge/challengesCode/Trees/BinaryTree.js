@@ -58,5 +58,25 @@ class BinaryTree {
         gothrough(this.root)
         return highest
     }
+    breadth(){
+        let arr = [];
+        arr.push(this.root)
+        function goThrough (value){
+        if (value.left){
+        arr.push(value.left)
+        }
+        if(value.right){
+        arr.push(value.right)
+        }
+        }
+        for(let i=0;i<arr.length;i++){
+        goThrough(arr[i])
+        }
+        let newArr =[]
+        for(let i=0; i<arr.length;i++){
+            newArr.push(arr[i].value)
+        }
+        return newArr
+        }
 }
 module.exports = BinaryTree

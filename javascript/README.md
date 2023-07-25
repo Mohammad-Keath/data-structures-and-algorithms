@@ -19,6 +19,7 @@
 |trees|[Click here](./CodeChallenge/challengesCode/Trees/tree.md)|
 |tree max|[Click here](./CodeChallenge/tree%20max.md)|
 |tree-breadth-first|[Click here](./CodeChallenge/tree-breadth-first.md)|
+|tree-fizz-buzz|[Click here](./CodeChallenge/tree-fizz-buzz.md)|
 
 
 

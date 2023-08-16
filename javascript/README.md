@@ -21,6 +21,7 @@
 |tree-breadth-first|[Click here](./CodeChallenge/tree-breadth-first.md)|
 |tree-fizz-buzz|[Click here](./CodeChallenge/tree-fizz-buzz.md)|
 |Insortion Sort|[Click here](./CodeChallenge/challengesCode/Insertion-Sort/Insertion%20Sort.md)|
+|Merge Sort|[Click here](./CodeChallenge/challengesCode/Merge%20Sort/Merge%20Sort.md)|
 
 
 

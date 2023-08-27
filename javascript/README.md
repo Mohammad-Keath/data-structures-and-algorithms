@@ -23,7 +23,7 @@
 |Insortion Sort|[Click here](./CodeChallenge/challengesCode/Insertion-Sort/Insertion%20Sort.md)|
 |Merge Sort|[Click here](./CodeChallenge/challengesCode/Merge%20Sort/Merge%20Sort.md)|
 |Comparisons|[Click here](./CodeChallenge/challengesCode/Comparisons/comparisons.md)|
-|hashtable|[Click here](./CodeChallenge/challengesCode/Comparisons/comparisons.md)|
+|hashtable|[Click here](./CodeChallenge/challengesCode/hashtable/hash%20map.md)|
 
 
 

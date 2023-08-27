@@ -44,7 +44,7 @@ class Hashmap {
         const theIndex = multiPrime % this.size;
         return theIndex;
     }
-    add(key, value) {
+    set(key, value) {
         const hash = this.makeHash(key);
         if(!this.map[hash]){
             this.map[hash] = new LinkedList();
@@ -52,6 +52,42 @@ class Hashmap {
 
         this.map[hash].append({ [key]: value })
     }
+    get(key){
+        const hash = this.makeHash(key)
+        const ll = this.map[hash]
+        if(ll){
+            let curr = ll.head
+            while(curr){
+                if(curr.value[key]){
+                    return curr.value[key]
+                }
+                curr = curr.next
+            }
+        }
+        return null
+    }
+    has(key){
+        const hash = this.makeHash(key)
+        if(this.map[hash][key]){
+            return true
+        }else return false
+    }
+    keys(){
+        let keys =[]
+        this.map.forEach((ll)=>{
+            let current = ll.head
+            while(current){
+                let key =Object.keys(current.value)
+                key.map((key)=>{
+                    keys.push(key)
+                })
+                current =current.next
+            }
+        })
+        return keys
+    }
+
+    
 }
 
-export default Hashmap
+module.exports =Hashmap

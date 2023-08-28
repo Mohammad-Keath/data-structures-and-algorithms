@@ -24,6 +24,7 @@
 |Merge Sort|[Click here](./CodeChallenge/challengesCode/Merge%20Sort/Merge%20Sort.md)|
 |Comparisons|[Click here](./CodeChallenge/challengesCode/Comparisons/comparisons.md)|
 |hashtable|[Click here](./CodeChallenge/challengesCode/hashtable/hash%20map.md)|
+|first repeated|[Click here](./CodeChallenge/challengesCode/first%20repeated//first%20repeated.md)|
 
 
 

@@ -25,7 +25,8 @@
 |Comparisons|[Click here](./CodeChallenge/challengesCode/Comparisons/comparisons.md)|
 |hashtable|[Click here](./CodeChallenge/challengesCode/hashtable/hash%20map.md)|
 |first repeated|[Click here](./CodeChallenge/challengesCode/first%20repeated//first%20repeated.md)|
-
+|tree-intersection|[Click here](./CodeChallenge/challengesCode/tree-intersection/tree-intersection.md)|
+rep
 
 
 ### Folder and Challenge Setup

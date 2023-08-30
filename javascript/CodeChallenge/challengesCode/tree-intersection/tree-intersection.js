@@ -1,4 +1,5 @@
 "use strict";
+
 class Node {
     constructor(value) {
         this.value = value;
@@ -97,4 +98,24 @@ class Hashmap {
     
 }
 
-module.exports =Hashmap
+const tree_intersection = (tree1,tree2)=>{
+    if(tree1.root){
+        let hash = new Hashmap(20)
+        let results =[]
+        function traverse(node){
+            if(node.left) traverse(node.left)
+            if(node.right) traverse(node.right)
+            hash.set(node.value,node.value)
+        }
+        traverse(tree1.root)
+
+        function traverse2(node){
+            if(node.left) traverse2(node.left)
+            if(node.right) traverse2(node.right)
+            if(hash.has(node.value)){results.push(node.value)}
+        }
+        traverse2(tree2.root)
+        return results
+    }
+}
+module.exports=tree_intersection

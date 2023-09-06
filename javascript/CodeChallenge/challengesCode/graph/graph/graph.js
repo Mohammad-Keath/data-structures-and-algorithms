@@ -27,16 +27,16 @@ class Graph{
     }
     getNeighbors(vertex){
         const adjacencies = this.adjacencyList.get(vertex);
-    if (!adjacencies) {
-        return [];
-    }
+        if (!adjacencies) {
+            return [];
+        }
 
-    return adjacencies.map(edge => {
-        return {
-            vertex: edge.vertex,
-            weight: edge.weight, // Assuming your Edge class has a 'weight' property
-        };
-    });    
+         return adjacencies.map(edge => {
+            return {
+                vertex: edge.vertex,
+                weight: edge.weight
+            };
+         });    
     }
     size(){
         let size = 0
@@ -46,44 +46,3 @@ class Graph{
 }
 module.exports=Graph
 
-const zero = new Vertex(0);
-const one = new Vertex(1);
-const two = new Vertex(2);
-const three = new Vertex(3);
-const four = new Vertex(4);
-const five = new Vertex(5);
-
-
-
-const myGraph = new Graph();
-
-myGraph.addVertex(zero);
-myGraph.addVertex(one);
-myGraph.addVertex(two);
-myGraph.addVertex(three);
-myGraph.addVertex(four);
-myGraph.addVertex(five);
-
-// console.log(myGraph);
-
-
-myGraph.addEdge(zero, five);
-myGraph.addEdge(zero, three);
-myGraph.addEdge(three, one);
-myGraph.addEdge(four, one);
-myGraph.addEdge(two, three);
-myGraph.addEdge(zero, two);
-myGraph.addEdge(five, four);
-
-
-
-
-
-// console.log("after", myGraph);
-
-for (const [k, v] of myGraph.adjacencyList.entries()) {
-    console.log( k, v);
-}
-console.log('getNeighbors',myGraph.getNeighbors(three))
-console.log('size',myGraph.size())
-console.log('getVertices ..',myGraph.getVertices())

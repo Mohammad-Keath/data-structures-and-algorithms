@@ -1,5 +1,5 @@
-const BinaryTree = require('../Trees/BinaryTree')
-const Node = require('../Trees/treeNode')
+const BinaryTree = require('../BinaryTree')
+const Node = require('../treeNode')
 const tree_intersection = require('./tree-intersection')
 
 describe('tree-insertion test',()=>{

@@ -1,5 +1,6 @@
 const Vertex = require('./vertex')
 const Edge = require('./edge')
+const res = require('express/lib/response')
 
 class Graph{
     constructor(){
@@ -25,6 +26,33 @@ class Graph{
         keys.map(item=>{arr.push(item.value)})
         return arr
     }
+    breadthFirst(startNode) {
+        const visited = [];
+        const queue = [];
+        const result = [];
+    
+        queue.push(startNode);
+        visited.push(startNode);
+        result.push(startNode.value)
+    
+        while (queue.length > 0) {
+            const currentNode = queue.shift();
+            
+            let neighbors = this.getNeighbors(currentNode)
+        
+            neighbors.map((neighbor)=>{
+                if (!visited.includes(neighbor.vertex)) {
+                    queue.push(neighbor.vertex);
+                    visited.push(neighbor.vertex);
+                    if(!result.includes(neighbor.vertex.value)){
+                        result.push(neighbor.vertex.value);
+                }
+                }
+            }) 
+        }
+    
+        return result;
+      }
     getNeighbors(vertex){
         const adjacencies = this.adjacencyList.get(vertex);
         if (!adjacencies) {

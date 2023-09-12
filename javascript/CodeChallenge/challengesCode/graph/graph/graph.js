@@ -1,6 +1,7 @@
 const Vertex = require('./vertex')
 const Edge = require('./edge')
 const res = require('express/lib/response')
+const { index } = require('cheerio/lib/api/traversing')
 
 class Graph{
     constructor(){
@@ -70,6 +71,28 @@ class Graph{
         let size = 0
         this.adjacencyList.forEach(item=>{size++})
         return size
+    }
+    trips(arr){
+        let cost = 0
+        if(arr.length>1){
+            const keys= Array.from(this.adjacencyList.keys())
+            let vertices = this.getVertices()
+            for(let i=0;i<arr.length-1;i++){
+                if(vertices.includes(arr[i])&&vertices.includes(arr[i+1])){
+                    let first = keys[vertices.indexOf(arr[i])]
+                    let neighbors = this.getNeighbors(first)
+                    for(let j=0;j<neighbors.length;j++){
+                        if(neighbors[j].vertex.value == arr[i+1]){
+                            cost += neighbors[j].weight
+                        } 
+                    } 
+                } else return null
+                if(cost == 0){
+                    return null
+                }
+            }
+        }
+        return cost     
     }
 }
 module.exports=Graph

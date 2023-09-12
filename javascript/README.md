@@ -29,6 +29,7 @@
 |hashmap-left-join|[Click here](./CodeChallenge/challengesCode/hashmap-left-join/hashmap-left-join.md)|
 |graph|[Click here](./CodeChallenge/challengesCode/graph/graph/graph.md)|
 |graph-breadth-first|[Click here](./CodeChallenge/challengesCode/graph/graph-breadth-first//graph-breadth-first.md)|
+|graph-business-trip|[Click here](./CodeChallenge/challengesCode/graph/graph-business-trip/graph-business-trip.md)|
 
 
 

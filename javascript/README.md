@@ -30,6 +30,7 @@
 |graph|[Click here](./CodeChallenge/challengesCode/graph/graph/graph.md)|
 |graph-breadth-first|[Click here](./CodeChallenge/challengesCode/graph/graph-breadth-first//graph-breadth-first.md)|
 |graph-business-trip|[Click here](./CodeChallenge/challengesCode/graph/graph-business-trip/graph-business-trip.md)|
+|graph-depth-first|[Click here](./CodeChallenge/challengesCode/graph/graph-depth-first//graph-depth-first.md)|
 
 
 
